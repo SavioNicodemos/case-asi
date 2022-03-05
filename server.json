@@ -1,0 +1,98 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "first_name": "Nicodemos",
+      "last_name": "Santos",
+      "email": "nicodemossantos@gmail.com",
+      "date_of_joining": "01/01/2020",
+      "date_of_leaving": "31/12/2021",
+      "date_of_birthday": "13/04/1997"
+    },
+    {
+      "id": 2,
+      "first_name": "Savio",
+      "last_name": "Nicodemos",
+      "email": "savio@gmail.com",
+      "date_of_joining": "01/01/2020",
+      "date_of_leaving": "31/12/2021",
+      "date_of_birthday": "13/04/1997"
+    },
+    {
+      "id": 3,
+      "first_name": "Julio",
+      "last_name": "Savio",
+      "email": "juliosavio@gmail.com",
+      "date_of_joining": "01/01/2020",
+      "date_of_leaving": "31/12/2021",
+      "date_of_birthday": "13/04/1997"
+    }
+  ],
+  "attendances": [
+    {
+      "id": 1,
+      "student_name": "Nicodemos Santos",
+      "class": "Roman Empire",
+      "date": "01/01/2020",
+      "attendance": "Present",
+      "excused": null,
+      "note": "Good student"
+    },
+    {
+      "id": 2,
+      "student_name": "Savio Nicodemos",
+      "class": "European Countries",
+      "date": "01/01/2020",
+      "attendance": "Absent",
+      "excused": true,
+      "note": "Doctor"
+    },
+    {
+      "id": 3,
+      "student_name": "Julio Savio",
+      "class": "Plants",
+      "date": "01/01/2020",
+      "attendance": "Absent",
+      "excused": false,
+      "note": "Bad student"
+    },
+    {
+      "id": 4,
+      "student_name": "Julio Savio",
+      "class": "Plants",
+      "date": "02/01/2020",
+      "attendance": "Tardy",
+      "excused": null,
+      "note": "Almost bad student"
+    }
+  ],
+  "marks": [
+    {
+      "id": 1,
+      "student_name": "Julio Savio",
+      "class": "Plants",
+      "subject": "Science",
+      "mark": 40,
+      "grade": "D",
+      "note": "Almost bad student"
+    },
+    {
+      "id": 2,
+      "student_name": "Julio Savio",
+      "class": "Roman Empire",
+      "subject": "History",
+      "mark": 85,
+      "grade": "B",
+      "note": "Good student"
+    },
+    {
+      "id": 3,
+      "student_name": "Julio Savio",
+      "class": "European Countries",
+      "subject": "Geography",
+      "mark": 100,
+      "grade": "A",
+      "note": "Perfect student"
+    }
+  ]
+}
