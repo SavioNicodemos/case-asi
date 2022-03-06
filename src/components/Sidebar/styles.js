@@ -14,9 +14,6 @@ export const Container = styled.div`
   border: 2px solid;
   border-top: 0px;
   border-color: black;
-`;
-
-export const Item = styled.li`
 
   a {
   padding: 6px 8px 6px 16px;

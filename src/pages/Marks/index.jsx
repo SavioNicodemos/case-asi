@@ -11,8 +11,12 @@ import deleteImg from "../../assets/delete.svg";
 function Marks() {
   const [marks, setMarks] = useState([]);
 
-  useEffect(() => {
+  const getMarks = () => {
     api.get(`/marks`).then((response) => setMarks(response.data));
+  }
+
+  useEffect(() => {
+    getMarks();
   }, []);
   
   return (

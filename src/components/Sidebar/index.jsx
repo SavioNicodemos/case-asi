@@ -2,17 +2,17 @@ import React from 'react';
 
 import {Link} from "react-router-dom";
 
-import { Container, Item } from './styles';
+import { Container } from './styles';
 
 function Sidebar() {
   return (
     <Container>
       <ul>
-        <Item><Link to='/'>Home Page</Link></Item>
-        <Item><Link to='/students'>Students</Link></Item>
-        <Item><Link to='/attendances'>Attendances</Link></Item>
-        <Item><Link to='/marks'>Marks</Link></Item>
-        <Item><Link to='/dashboard'>Dashboard</Link></Item>
+        <Link to='/'>Home Page</Link>
+        <Link to='/students'>Students</Link>
+        <Link to='/attendances'>Attendances</Link>
+        <Link to='/marks'>Marks</Link>
+        <Link to='/dashboard'>Dashboard</Link>
       </ul>
     </Container>
   );
