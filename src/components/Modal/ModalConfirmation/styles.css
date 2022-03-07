@@ -1,4 +1,4 @@
-.modal-overlay {
+.modal-custom-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
   opacity: 0.5;
 }
 
-.modal-wrapper {
+.modal-custom-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
   outline: 0;
 }
 
-.modal {
+.modal-custom {
   z-index: 100;
   background: white;
   position: relative;
@@ -31,12 +31,12 @@
   padding: 2rem;
 }
 
-.modal-header {
+.modal-custom-header {
   display: flex;
   justify-content: flex-end;
 }
 
-.modal-close-button {
+.modal-custom-close-button {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1;

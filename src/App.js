@@ -1,3 +1,4 @@
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import {
@@ -16,6 +17,7 @@ import Marks from './pages/Marks';
 import Students from './pages/Students';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
+import StudentSave from './pages/Students/save';
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/students" element={<Students />} />
+          <Route path="/students/save" element={<StudentSave />} />
           <Route path="/marks" element={<Marks />} />
           <Route path="/attendances" element={<Attendances />} />
           <Route path="/dashboard" element={<Dashboard />} />

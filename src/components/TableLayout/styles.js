@@ -20,6 +20,10 @@ export const TableContainer = styled.div`
     padding-bottom: 10px;
   }
 
+  th {
+    cursor: pointer;
+  }
+
   header {
   margin: 1rem;
   display: flex;

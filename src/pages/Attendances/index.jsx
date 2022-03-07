@@ -7,9 +7,30 @@ import viewImg from "../../assets/view.svg";
 import editImg from "../../assets/edit.svg";
 import deleteImg from "../../assets/delete.svg";
 import { useEffect, useState } from "react";
+import ModalConfirmation from "../../components/Modal/ModalConfirmation";
+import useModal from '../../hooks/useModal';
 
 function Attendances() {
   const [attendances, setAttendances] = useState([]);
+  const [attendanceId, setAttendanceId] = useState(0);
+
+  const { isShowing, toggle } = useModal();
+
+  const getAttendances = () => {
+    api.get(`/attendances`).then((response) => setAttendances(response.data));
+  };
+
+  const resetParams = () => {
+    setAttendanceId(0);
+  };
+
+  const attendanceDelete = async (attendanceId) => {
+    await api.delete('/attendances/' + attendanceId);
+
+    resetParams();
+    toggle();
+    getAttendances();
+  };
 
   useEffect(() => {
     api.get(`/attendances`).then((response) => setAttendances(response.data));
@@ -27,8 +48,8 @@ function Attendances() {
           "Student name",
           "Class",
           "Date",
-          "Present/Absent/Tardy",
-          "Excused/Unexcused",
+          "Attendance",
+          "Excused?",
           "Notes",
         ]}
       >
@@ -45,11 +66,27 @@ function Attendances() {
               <td>
                 <img src={viewImg} alt="View icon" />
                 <img src={editImg} alt="Edit icon" />
-                <img src={deleteImg} alt="Delete icon" />
+                <img
+                  src={deleteImg}
+                  alt="Delete icon"
+                  onClick={() => {
+                    setAttendanceId(attendance.id);
+                    toggle();
+                  }}
+                />
               </td>
             </tr>
           ))}
       </TableLayout>
+      <ModalConfirmation
+        isShowing={isShowing}
+        hide={toggle}
+        onConfirm={() => attendanceDelete(attendanceId)}
+      >
+        <p>
+          Are you sure you want to delete the attendance Nº "<b>{attendanceId}</b>"?
+        </p>
+      </ModalConfirmation>
     </TableContainer>
   );
 }

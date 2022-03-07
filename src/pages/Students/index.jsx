@@ -10,6 +10,7 @@ import deleteImg from '../../assets/delete.svg';
 import api from '../../services/api';
 import useModal from '../../hooks/useModal';
 import ModalConfirmation from '../../components/Modal/ModalConfirmation';
+import { Link } from 'react-router-dom';
 
 function Students() {
   const [students, setStudents] = useState([]);
@@ -30,6 +31,7 @@ function Students() {
     setStudentId(0);
     setStudentName('');
   };
+  
   const getStudents = () => {
     api.get(`/students`).then((response) => setStudents(response.data));
   };
@@ -42,7 +44,9 @@ function Students() {
     <TableContainer>
       <header>
         <h3>Students</h3>
-        <AddButton />
+        <Link to="/students/save">
+          <AddButton />
+        </Link>
       </header>
 
       <TableLayout
@@ -68,7 +72,9 @@ function Students() {
               <td>{student.date_of_birthday}</td>
               <td>
                 <img src={viewImg} alt="View icon" />
-                <img src={editImg} alt="Edit icon" />
+                <Link to={'/students/save?studentId=' + student.id}>
+                  <img src={editImg} alt="Edit icon" />
+                </Link>
                 <img
                   src={deleteImg}
                   alt="Delete icon"

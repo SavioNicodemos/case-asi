@@ -6,19 +6,19 @@ const ModalConfirmation = ({ isShowing, hide, children, onConfirm = () => {} }) 
   isShowing
     ? createPortal(
         <>
-          <div className="modal-overlay" />
+          <div className="modal-custom-overlay" />
           <div
-            className="modal-wrapper"
+            className="modal-custom-wrapper"
             aria-modal
             aria-hidden
             tabIndex={-1}
             role="dialog"
           >
-            <div className="modal">
-              <div className="modal-header">
+            <div className="modal-custom">
+              <div className="modal-custom-header">
                 <button
                   type="button"
-                  className="modal-close-button"
+                  className="modal-custom-close-button"
                   data-dismiss="modal"
                   aria-label="Close"
                   onClick={hide}

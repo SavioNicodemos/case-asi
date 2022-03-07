@@ -5,27 +5,36 @@
       "first_name": "Nicodemos",
       "last_name": "Santos",
       "email": "nicodemossantos@gmail.com",
-      "date_of_joining": "01/01/2020",
-      "date_of_leaving": "31/12/2021",
-      "date_of_birthday": "13/04/1997"
+      "date_of_joining": "2022-02-08",
+      "date_of_leaving": "2022-04-08",
+      "date_of_birthday": "2022-03-09"
     },
     {
       "id": 2,
       "first_name": "Savio",
       "last_name": "Nicodemos",
       "email": "savio@gmail.com",
-      "date_of_joining": "01/01/2020",
-      "date_of_leaving": "31/12/2021",
-      "date_of_birthday": "13/04/1997"
+      "date_of_joining": "2019-11-07",
+      "date_of_leaving": "2021-07-02",
+      "date_of_birthday": "1990-05-30"
     },
     {
       "id": 3,
       "first_name": "Julio",
       "last_name": "Savio",
       "email": "juliosavio@gmail.com",
-      "date_of_joining": "01/01/2020",
-      "date_of_leaving": "31/12/2021",
-      "date_of_birthday": "13/04/1997"
+      "date_of_joining": "2020-01-01",
+      "date_of_leaving": "2021-12-31",
+      "date_of_birthday": "1997-04-13"
+    },
+    {
+      "first_name": "Oioioioioo",
+      "last_name": "ghghghghg",
+      "email": "test@gmail.co",
+      "date_of_joining": "2022-03-17",
+      "date_of_leaving": "2022-03-03",
+      "date_of_birthday": "2022-03-15",
+      "id": 4
     }
   ],
   "attendances": [
@@ -33,7 +42,7 @@
       "id": 1,
       "student_name": "Nicodemos Santos",
       "class": "Roman Empire",
-      "date": "01/01/2020",
+      "date": "2020-01-01",
       "attendance": "Present",
       "excused": null,
       "note": "Good student"
@@ -42,7 +51,7 @@
       "id": 2,
       "student_name": "Savio Nicodemos",
       "class": "European Countries",
-      "date": "01/01/2020",
+      "date": "2020-01-01",
       "attendance": "Absent",
       "excused": true,
       "note": "Doctor"
@@ -51,7 +60,7 @@
       "id": 3,
       "student_name": "Julio Savio",
       "class": "Plants",
-      "date": "01/01/2020",
+      "date": "2020-01-01",
       "attendance": "Absent",
       "excused": false,
       "note": "Bad student"
@@ -60,7 +69,7 @@
       "id": 4,
       "student_name": "Julio Savio",
       "class": "Plants",
-      "date": "02/01/2020",
+      "date": "2020-01-02",
       "attendance": "Tardy",
       "excused": null,
       "note": "Almost bad student"
