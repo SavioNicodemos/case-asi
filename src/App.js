@@ -18,6 +18,7 @@ import Students from './pages/Students';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import StudentSave from './pages/Students/save';
+import AttendanceSave from './pages/Attendances/save';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/students/save" element={<StudentSave />} />
           <Route path="/marks" element={<Marks />} />
           <Route path="/attendances" element={<Attendances />} />
+          <Route path="/attendances/save" element={<AttendanceSave />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </div>

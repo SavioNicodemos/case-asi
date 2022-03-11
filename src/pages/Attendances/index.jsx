@@ -9,6 +9,7 @@ import deleteImg from "../../assets/delete.svg";
 import { useEffect, useState } from "react";
 import ModalConfirmation from "../../components/Modal/ModalConfirmation";
 import useModal from '../../hooks/useModal';
+import { Link } from "react-router-dom";
 
 function Attendances() {
   const [attendances, setAttendances] = useState([]);
@@ -40,7 +41,9 @@ function Attendances() {
     <TableContainer>
       <header>
         <h3>Attendances</h3>
-        <AddButton />
+        <Link to="/attendances/save">
+          <AddButton />
+        </Link>
       </header>
       <TableLayout
         columnTitles={[
@@ -65,7 +68,9 @@ function Attendances() {
               <td>{attendance.note}</td>
               <td>
                 <img src={viewImg} alt="View icon" />
-                <img src={editImg} alt="Edit icon" />
+                <Link to={'/attendances/save?attendanceId=' + attendance.id}>
+                  <img src={editImg} alt="Edit icon" />
+                </Link>
                 <img
                   src={deleteImg}
                   alt="Delete icon"

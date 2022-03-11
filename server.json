@@ -28,13 +28,22 @@
       "date_of_birthday": "1997-04-13"
     },
     {
-      "first_name": "Oioioioioo",
-      "last_name": "ghghghghg",
-      "email": "test@gmail.co",
-      "date_of_joining": "2022-03-17",
-      "date_of_leaving": "2022-03-03",
-      "date_of_birthday": "2022-03-15",
-      "id": 4
+      "first_name": "Nick2",
+      "last_name": "Sav2",
+      "email": "sav@gmail.com",
+      "date_of_joining": "2022-02-09",
+      "date_of_leaving": "2022-03-01",
+      "date_of_birthday": "2022-03-02",
+      "id": 5
+    },
+    {
+      "first_name": "dasdasd",
+      "last_name": "asdasdas",
+      "email": "1231@hotmail.com",
+      "date_of_joining": "2022-03-09",
+      "date_of_leaving": "2022-03-15",
+      "date_of_birthday": "2022-03-03",
+      "id": 6
     }
   ],
   "attendances": [
@@ -70,9 +79,18 @@
       "student_name": "Julio Savio",
       "class": "Plants",
       "date": "2020-01-02",
-      "attendance": "Tardy",
+      "attendance": "Present",
       "excused": null,
       "note": "Almost bad student"
+    },
+    {
+      "student_name": "Teste ",
+      "class": "pro max",
+      "date": "2020-01-31",
+      "attendance": "Absent",
+      "excused": null,
+      "note": "Salvadaço\nporem\nta na linha",
+      "id": 5
     }
   ],
   "marks": [
