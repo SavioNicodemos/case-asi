@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `json-server server.json -p 3333 -w`
+### `json-server server.json -p 3333 -d 500 -w`
 
 Starts the Fake API to deployment
 
